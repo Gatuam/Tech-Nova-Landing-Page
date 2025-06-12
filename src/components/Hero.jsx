@@ -1,10 +1,12 @@
 import React from "react";
 import hero from "../assets/graphics/HeroGraphic.webp";
 import ArrowRight from "./icons/ArrowRight";
+import Review from "./Review";
 
 const Hero = () => {
   return (
-    <div className="flex w-full h-screen justify-center items-center px-15 py-5 bg-gradient-to-b from-[#001111] to-[#001a1a]">
+    <>
+    <div className="flex w-full h-[90vh] justify-center items-center px-15 py-5 bg-gradient-to-b from-[#001111] to-[#001a1a]">
       <div className="w-220  text-white">
         <h1 className="text-[5vw] font-bold">
           Built for Speed. Powered by AI.{" "}
@@ -40,6 +42,9 @@ const Hero = () => {
         <img className="w-[75%]" src={hero} alt="" />
       </div>
     </div>
+    <div className="w-full h-30 bg-gradient-to-b from-[#001a1a] to-[#001b1b]"><Review></Review>
+    </div>
+    </>
   );
 };
 
